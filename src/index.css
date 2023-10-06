@@ -1,0 +1,27 @@
+body {
+  
+  background-image: url(./assets/bgImg.jpg);
+  /* filter: blur(4px); */
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body::before {
+  content: "";
+  background-image: url("./assets/bgImg.jpg"); /* Replace with your image URL */
+  filter: blur(3px); /* Adjust the blur strength as needed */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
